@@ -11,23 +11,26 @@
 <body onload="initialize();">
     <div class="container">
         <div class="player">
+            Player
             <span id="playerStr">Strength</span>
             <span id="playerCng">Cunning</span>
             <span id="playerSpd">Speed</span>
             <span id="playerFtg">Fatigue</span>
-            <button id="attack" onclick="fight(id);">Attack</button>
-            <button id="defend" onclick="defend(id);">Defend</button>
-            <button id="finisher" onclick="finish(id);">Finishing Move</button>
+            <button id="attack" onclick="attack(player);">Attack</button>
+            <button id="defend" onclick="defend(player);">Defend</button>
+            <button id="finisher" onclick="finishMove(player);">Finishing Move</button>
         </div>
         <div class="enemy">
+            Enemy
             <span id="enemyStr">Strength</span>
             <span id="enemyCng">Cunning</span>
             <span id="enemySpd">Speed</span>
             <span id="enemyFtg">Fatigue</span>
         </div>
-        <div class="logs">
+        <br><br><br><br>
+        <span id="logs">
 
-        </div>
+        </span>
     </div>
 </body>
 </html>

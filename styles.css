@@ -7,7 +7,7 @@ html, body{
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .player{
@@ -19,6 +19,60 @@ html, body{
 .enemy{
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    float: right;
 }
 
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    background-color: black;
+    font-weight: bold;
+}
+
+/* body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    font-weight: bold;
+} */
+
+/* .player {
+    display: flex;
+    flex-direction: column;
+}
+
+.enemy {
+    display: flex;
+    flex-direction: column;
+} */
+
+button {
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+
+.log {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(78, 78, 78, 0.6);
+    padding: 10px;
+    width: 110px;
+    margin: 10px;
+    max-width: 500px;
+}
+
+#finishingMove {
+    display: none;
+}
