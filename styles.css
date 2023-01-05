@@ -1,0 +1,110 @@
+body {
+    background-color: darkkhaki;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.displayBox{
+    color: black;
+    margin-top:20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgreen;
+    align-items: center;
+    width: 50%;
+}
+
+.enemy {
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+    align-items: center;
+    width: 50%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+#content>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    font-family: sans-serif
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enemy {
+        width: 100%;
+    }
+
+    .player {
+        width: 100%;
+    }
+}
+
+#Rock {
+    background: url(./rock.jpg) no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+#Rock:active {
+    background: url(./rock.jpg) no-repeat;
+    opacity: .5;
+}
+
+#Paper {
+    background: url(./paper.jpg) no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+#Paper:active {
+    background: url(./paper.jpg) no-repeat;
+    opacity: .5;
+}
+
+#Scissor {
+    background: url(./scissor.jpg) no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+#Scissor:active {
+    background: url(./scissor.jpg) no-repeat;
+    opacity: .5;
+}
+

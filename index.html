@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="initialize();">
+    <div class="container">
+        <div class="player">
+            <h1>Player</h1>
+            <div id="content">
+                <div>
+                    <button id="Rock" onclick="roll(0)"></button>
+                    <!-- <img src="rock.jpg" alt="rock"> -->
+                    <span id="playerRock">Rock(s)</span>
+                </div>
+                <div>
+                    <button id="Paper" onclick="roll(1);"></button>
+                    <!-- <img src="paper.jpg" alt="paper"> -->
+                    <span id="playerPaper">Paper(s)</span>
+                </div>
+                <div>
+                    <button id="Scissor" onclick="roll(2);"></button>
+                    <!-- <img src="scissor.jpg" alt="scissor"> -->
+                    <span id="playerScissor">Scissors(s)</span>
+                </div>
+            </div>
+        </div>
+        <div class="enemy">
+            <h1>Enemy</h1>
+            <div id="content">
+                <div>
+                    <img src="rock.jpg" alt="rock">
+                    <span id="enemyRock">Rocks(s)</span>
+                </div>
+                <div>
+                    <img src="paper.jpg" alt="paper">
+                    <span id="enemyPaper">Paper(s)</span>
+                </div>
+                <div>
+                    <img src="scissor.jpg" alt="scissor">
+                    <span id="enemyScissor">Scissor(s)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="displayBox">
+        <div>
+            <img src="" alt="player" id="playerImg">
+        </div>
+
+        <div>
+            <img src="" alt="enemy" id="enemyImg">
+        </div>
+        
+    </div>
+    <div id="logBox">
+
+    </div>
+</body>
+
+</html>
